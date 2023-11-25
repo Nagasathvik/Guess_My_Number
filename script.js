@@ -1,29 +1,5 @@
 "use strict";
-/*
-console.log(document.querySelector(".message").textContent);   //for textContent
 
-document.querySelector(".message").textContent = "Correct_Number!";   // for 'textContent' along with assigning a value.
-console.log(document.querySelector(".message").textContent);
-
-document.querySelector(".number").textContent = 13;
-document.querySelector(".score").textContent = 12;
-
-console.log((document.querySelector(".guess").value = 23));   //for 'Value' along with assigning a value.
-*/
-
-/*
-document.querySelector(".check").addEventListener("click", function () {
-  let guess = Number(document.querySelector(".guess").value);
-  console.log(guess, typeof guess);
-
-  if (!guess) {
-    //This is logic for when user dont enter any input //Here exactly what happens is 'When we won't enter any value in the input field then automatically it will take the value as 0(zero) which is a falsy value. So we will place a !(negation) before thatt guess so that when the 'if' has some value then it will display some message to console as(Enter a valid number).
-    document.querySelector(".message").textContent = "Enter a  valid input 😟";
-  }
-});
-
-
-*/
 let guess;
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
